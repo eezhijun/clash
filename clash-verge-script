@@ -8,7 +8,7 @@
 // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators
 // https://github.com/Loyalsoldier/clash-rules
 // https://wiki.metacubex.one/config/rules/
-// https://github.com/xiaolin-007/clash-verge-script
+
 // 国内DNS服务器
 const domesticNameservers = [
   "https://223.5.5.5/dns-query", // 阿里DoH
@@ -149,50 +149,50 @@ const ruleProviders = {
   "bahamut": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/Bahamut.txt",
-    "path": "./ruleset/xiaolin-007/bahamut.yaml"
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/Bahamut.txt",
+    "path": "./ruleset/zhijuno/bahamut.yaml"
   },
   "YouTube": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/YouTube.txt",
-    "path": "./ruleset/xiaolin-007/YouTube.yaml"
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/YouTube.txt",
+    "path": "./ruleset/zhijuno/YouTube.yaml"
   },
   "Netflix": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/Netflix.txt",
-    "path": "./ruleset/xiaolin-007/Netflix.yaml"
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/Netflix.txt",
+    "path": "./ruleset/zhijuno/Netflix.yaml"
   },
   "Spotify": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/Spotify.txt",
-    "path": "./ruleset/xiaolin-007/Spotify.yaml"
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/Spotify.txt",
+    "path": "./ruleset/zhijuno/Spotify.yaml"
   },
   "BilibiliHMT": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/BilibiliHMT.txt",
-    "path": "./ruleset/xiaolin-007/BilibiliHMT.yaml"    
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/BilibiliHMT.txt",
+    "path": "./ruleset/zhijuno/BilibiliHMT.yaml"
   },
   "AI": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/AI.txt",
-    "path": "./ruleset/xiaolin-007/AI.yaml"    
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/AI.txt",
+    "path": "./ruleset/zhijuno/AI.yaml"
   },
   "TikTok": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/TikTok.txt",
-    "path": "./ruleset/xiaolin-007/TikTok.yaml"    
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/TikTok.txt",
+    "path": "./ruleset/zhijuno/TikTok.yaml"
   },
   "Steam": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/rule/Steam.txt",
-    "path": "./ruleset/xiaolin-007/Steam.yaml"    
+    "url": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/rule/Steam.txt",
+    "path": "./ruleset/zhijuno/Steam.yaml"
   },
 };
 // 规则
@@ -306,7 +306,7 @@ function main(config) {
       "type": "select",
       "proxies": ["节点选择", "延迟选优", "故障转移", "全局直连"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/netflix.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/icon/netflix.svg"
     },
     {
       ...groupBaseOption,
@@ -330,7 +330,7 @@ function main(config) {
       "type": "select",
       "include-all": true,
       "proxies": ["节点选择", "延迟选优", "故障转移"],
-      "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/tiktok.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/icon/tiktok.svg"
     },
     {
       ...groupBaseOption,
@@ -338,7 +338,7 @@ function main(config) {
       "type": "select",
       "include-all": true,
       "proxies": ["节点选择", "延迟选优", "故障转移"],
-      "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/Steam.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/icon/Steam.svg"
     },
     {
       ...groupBaseOption,
@@ -363,7 +363,7 @@ function main(config) {
       "proxies": ["节点选择"],
       "include-all": true,
       "filter": "(?i)台|tw|TW",
-      "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/Bahamut.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/icon/Bahamut.svg"
     },
     {
       ...groupBaseOption,
@@ -372,7 +372,7 @@ function main(config) {
       "proxies": ["全局直连", "节点选择","延迟选优", "故障转移"],
       "include-all": true,
       "filter": "^(?!.*(官网|套餐|流量|异常|剩余)).*$",
-      "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/bilibili.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/icon/bilibili.svg"
     },
     {
       ...groupBaseOption,
@@ -380,7 +380,7 @@ function main(config) {
       "type": "select",
       "proxies": ["节点选择", "延迟选优", "故障转移","全局直连"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/xiaolin-007/clash@main/icon/spotify.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/zhijuno/clash@main/icon/spotify.svg"
     },
     {
       ...groupBaseOption,
